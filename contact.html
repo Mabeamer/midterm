@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="lib/css/styling.css">
+</head>
+<body>
+  <div class="menu">
+    <ul id="nav">
+      <li id="nav"><a href = "index.html" id="nav">Homepage</a></li>
+      <li id="nav"><a href = "contact.html" id="nav">Contact</a></li>
+      <li id="nav"><a href = "table.html" id="nav">Table</a></li>
+      <li id="nav"><a href = "codepen.html" id="nav">Codepen</a></li>
+  </div>
+  <!-- For the validation plug into work properly i had to use the required tag, the text shows and I can style it properly but it would not work without it. If you
+comment out the javascript link (js/scripts.js) You cold see the difference in how the tag acts. -->
+  <div class="formContainer">
+    <form class="contact" method="get" action="#" id="contact">
+      <label>First Name</label>
+      <input type="text" name="fname" required>
+      <label>Last Name</label>
+      <input type="text" name="lname" required>
+      <label>Email</label>
+      <input type="text" name="email">
+      <label>Phone Number</label>
+      <input type="tel" name="phone">
+      <select>
+        <option value=""> -- </option>
+        <option value="red"> Red </option>
+        <option value="orange"> Orange </option>
+        <option value="yellow"> Yellow </option>
+        <option value="green"> Green </option>
+        <option value="blue"> Blue </option>
+        <option value="indigo"> Indigo </option>
+        <option value="violet"> Violet </option>
+      </select>
+      <textarea rows="2" cols="50">Why is this your favorite color in the rainbow?</textarea>
+      <input class="submit" type="submit" value="Submit">
+    </form>
+  </div>
+  <script
+    src="http://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="lib/js/validation.js"></script>
+  <script type="text/javascript" src="lib/js/script.js"></script>
+</body>
+</html>
